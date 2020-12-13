@@ -6,11 +6,11 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: photob2
-  search-photos:
+  searchphotos:
     Type: 'AWS::Serverless::Function'
     Properties:
-      FunctionName: search-photos
-      Handler: search-photos.lambda_handler
+      FunctionName: searchphotos
+      Handler: searchphotos.lambda_handler
       Runtime: python3.8
       CodeUri: ./lambda_functions
       Description: 'Lambda function for CD Demo'
@@ -29,11 +29,11 @@ Resources:
             Path: /search
             Method: get
 
-  index-photos:
+  indexphotos:
     Type: 'AWS::Serverless::Function'
     Properties:
-      FunctionName: index-photos
-      Handler: index-photos.lambda_handler
+      FunctionName: indexphotos
+      Handler: indexphotos.lambda_handler
       Runtime: python3.6
       CodeUri: ./lambda_functions
       Description: 'Lambda function for CD Demo'
