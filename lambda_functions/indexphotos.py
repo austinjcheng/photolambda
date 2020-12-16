@@ -9,6 +9,7 @@ def lambda_handler(event, context):
     print(event)
     print("hello22")
     print("checkifitupdates")
+    print("doublecheck")
     client = boto3.client('rekognition')
     s3_info = event['Records'][0]['s3']
     bucket = s3_info['bucket']['name']
