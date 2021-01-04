@@ -28,7 +28,7 @@ def lambda_handler(event, context):
     print(required_json)
     url = "https://vpc-photos-rkvuigox7og7d7lervybnntmie.us-west-2.es.amazonaws.com/photos/0"
     headers = {"Content-Type": "application/json"}
-    r = requests.post(url, data=json.dumps(format).encode("utf-8"), headers=headers, auth=HTTPBasicAuth('kiyoon', 'KIwi727272!'))
+    r = requests.post(url, data=json.dumps(format).encode("utf-8"), headers=headers, auth=HTTPBasicAuth('*', '*'))
     print(r.text)
     
     return {
