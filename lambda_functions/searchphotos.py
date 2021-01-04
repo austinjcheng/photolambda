@@ -71,7 +71,7 @@ def search_intent(labels):
     for label in labels:
         if (label is not None) and label != '':
             url2 = url+label
-            resp.append(requests.get(url2, auth = HTTPBasicAuth('kiyoon', 'KIwi727272!')).json())
+            resp.append(requests.get(url2, auth = HTTPBasicAuth('*', '*')).json())
     print (resp)
   
     output = []
